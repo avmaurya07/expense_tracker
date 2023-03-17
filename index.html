@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>
+		EXPENSE ENTRY
+	</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+	
+</head>
+
+<body>
+	<font color="#FFFFFF">
+	<h1>EXPENSE ENTRY</h1>
+</font>
+	<!-- Create Form -->
+	<form id="form" name="form1">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="user" id="label-user">
+				User
+			</label>
+
+			<!-- Input Type Select for User -->
+			<!-- <select id="User_Name" name="User_Name"required>
+                <option _ngcontent-xpf-c55="" value="">Select</option>
+                <option _ngcontent-xpf-c55="" value="Avinash" class="ng-star-inserted">Avinash</option>
+                <option _ngcontent-xpf-c55="" value="User 2" class="ng-star-inserted">User 2</option>
+                <option _ngcontent-xpf-c55="" value="User 3" class="ng-star-inserted">User 3</option>
+                <option _ngcontent-xpf-c55="" value="User 4" class="ng-star-inserted">User 4</option>
+            </select> -->
+			<input type="text"
+				id="User_Name" name="User_Name" value=""
+				placeholder="Enter your password" required />
+		</div>
+
+		<div class="form-control">
+			<label for="password" id="label-password">
+				Password
+			</label>
+
+			<!-- Input Type Password-->
+			<input type="password"
+				id="password" name="password" value=""
+				placeholder="Enter your password" required />
+		</div>
+        <div class="form-control">
+			<label for="amount" id="label-amount">
+				Amount
+			</label>
+
+			<!-- Input Type Password-->
+			<input type="number"
+				id="Amount" name="Amount"
+				placeholder="Amount" required />
+		</div>
+		<div class="form-control">
+			<label for="expence" id="label-expence">
+				Expence Head
+			</label>
+
+			<!-- Input Type Text -->
+			<select  id="Expence_head" required name="Expence_head">
+                <option  value="">Select</option>
+                <option  value="Vegetables" class="ng-star-inserted">Vegetables</option>
+                <option  value="Food" class="ng-star-inserted">Food</option>
+                <option  value="Grocery" class="ng-star-inserted">Grocery</option>
+                <option  value="Others" class="ng-star-inserted">Others</option>
+                 </select>
+		</div>
+        <div class="form-control">
+			<label for="Description" id="label-Description">
+				Description
+			</label>
+
+			<!-- Input Type Password-->
+			<input type="text"
+				id="Description" name="Description"
+				placeholder="Description" required />
+		</div>
+		
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" id="submit"value="submit" name="button1" onclick="SubForm2()">
+			Submit
+		</button>
+	</form>
+	
+</body>
+
+</html>
